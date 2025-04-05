@@ -4,6 +4,10 @@ import pandas as pd
 from flask import Flask,request,jsonify,render_template
 import pickle
 import streamlit as st
+pyenv install 3.11.7
+pyenv virtualenv 3.11.7 my-streamlit-env
+pyenv activate my-streamlit-env
+pip install streamlit matplotlib
 
 app = Flask (__name__)
 model = pickle.load (open ('model.pkl','rb'))
